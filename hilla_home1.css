@@ -1,5 +1,5 @@
 /*L'image d'arrière plan elle est fixe, et couvre toute la page*/
-body{background: url(hilla_images/mannequin_shopping.jpg) no-repeat fixed ; 
+body{background: url(mannequin_shopping.jpg) no-repeat fixed ; 
 	background-size: cover;}
 /*Le cadre section contenant les champs de formulaire est bien centré ses éléments aussi*/
 .body-header{height: 150px;}
