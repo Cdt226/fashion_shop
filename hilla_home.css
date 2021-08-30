@@ -1,0 +1,1153 @@
+/*L'image d'arrière plan elle est fixe, et couvre toute la page*/
+
+@media only screen and (min-width: 1200px)
+{
+*{
+	transition:0.5s;
+	font-family: sans-serif;
+}
+
+body{
+	width:100%;
+	margin:0;
+	background: #fff;}
+/*Le cadre section contenant les champs de formulaire est bien centré ses éléments aussi*/
+body .body-header{
+	background:#4d0000;
+	position:fixed;
+	width:100%;
+	height: 75px;
+	opacity:0.9;
+	margin-bottom: 20px;
+	z-index: 5;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 8px;}
+/*Mise en forme pour tous lesparagraphes*/
+p{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*Mise en forme des éléments d'en tête*/
+	.logo{margin-left:30px;}
+
+.nav-list{
+	list-style: none;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;}
+
+.nav-list div{
+	margin-left:10px;
+	margin-right:30px;}
+
+span .lien{
+	border:1px solid #fff;
+	border-radius:3px;
+	padding:7px 10px;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+span .lien:hover{
+	color:#4d0000;
+	border-radius:3px;
+	background: #ffff;
+}
+
+span .lien:active{
+	color:#4d0000;
+	background: #fff;
+	border-radius:5px;
+}
+
+.log{
+	font-family: lucida handwriting;
+	font-size:40px;
+	color:orange;
+	text-shadow: 3px 3px 4px orange, 4px 4px 3px #fff, 5px 5px 2px #000;
+}
+
+.log sub,.log sup{
+	font-family:inherit;
+	font-size:11px;
+}
+
+.button-container{display: none;}
+
+/*.menu-header-deroulant{
+	list-style:none;
+	display: ;
+  	position: absolute;
+  	margin-top: 27px;
+ 	width: 200px;
+  	background-color: #ffff;#f9f9f9;
+  	z-index: 1;
+  	border-radius:3px;
+  	border:1px solid #4d0000;
+	}
+
+.menu-header-deroulant li
+{
+	width:100%;
+	height:50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:3px;
+}
+.menu-header-deroulant li a
+{
+	text-decoration:none;
+  	color:#4d0000;
+  	font-size: 11px;
+}
+.menu-header-deroulant li:hover
+{
+	background: #4d0000;border:1px solid #fff;
+}
+.menu-header-deroulant li:hover a
+{
+	color:#fff;
+}
+.button-container:hover .menu-header-deroulant
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.button{
+	height:50px;
+	width:50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	background: unset;
+	border:1px solid #fff;
+	border-radius:5px;
+}
+
+.button div{
+	width:100%;
+	height:4px;
+	border-radius:3px;
+	background: #fff;
+}*/
+
+/*.button div:nth-child(2){
+	width:90%;
+	height:5px;
+	border-radius:3px;
+	background: #fff;
+}
+
+.button div:nth-child(3){
+	width:80%;
+	height:5px;
+	border-radius:3px;
+	background: #fff;
+}*/
+
+
+.button-container{display: }
+
+.menu-mode-deroulant{
+	list-style:none;
+	display: none;
+  	position: absolute;
+  	margin-top: 27px;
+ 	width: 100px;
+  	background-color: #ffff;#f9f9f9;
+  	z-index: 1;
+  	border-radius:3px;
+  	border:1px solid #4d0000;
+}
+
+.menu-mode-deroulant li a{
+	text-decoration:none;
+  	color:#4d0000;
+  	font-size: 11px;
+  	  
+}
+
+.menu-mode-deroulant li{
+	width:100%;
+	height:30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:3px;
+	
+}
+
+.menu-mode:hover .menu-mode-deroulant{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;}
+
+.menu-mode-deroulant li:hover{background: #4d0000;border:1px solid #fff;}
+
+.menu-mode-deroulant li:hover a{color:#fff;}
+
+.menu-recette-deroulant{
+	list-style:none;
+	display: none;
+  	position: absolute;
+  	margin-top: 30px;
+ 	width: 130px;
+  	background-color: #ffff;#f9f9f9;
+  	z-index: 1;
+  	border-radius:3px;
+  	border:1px solid #4d0000;
+}
+
+.menu-recette-deroulant li{
+	width:100%;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:3px;
+}
+
+.menu-recette-deroulant li a{
+	font-size: 11px;
+	text-decoration:none;
+  	color:#4d0000;
+}
+
+.menu-recette:hover .menu-recette-deroulant{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;}
+
+.menu-recette-deroulant li:hover{background: #4d0000;border:1px solid #fff;}
+
+.menu-recette-deroulant li:hover a{color:#fff;}
+
+/*Mise en forme de l'image d'accueil*/
+.fashion-description-section{
+	width:100%;
+	height:400px;
+	top:75px;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+header[class="image"] img{
+	border-radius:5px;
+	width:100%;
+}
+
+/*Mise en forme du grand bloc section de la page*/
+.body{
+	position:relative;
+	top:90px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*border:3px solid red;*/ /*NB: cette bordure sert au développement*/
+	/*margin:20px;*/
+	background:#fff;
+}
+
+/* Mise en forme du bloc section contenant la galerie et la présentation*/
+.content{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+article[class="presentation"]{
+	height:300px;
+	border:3px solid #aaa;
+	border-radius:8px;
+	background: #fff;
+	overflow: auto;
+	min-width: 280px;
+	margin-bottom:10px;
+}
+/*Mise en forme du bloc aside de droite*/
+aside{
+	background: #fff;
+	/*border:3px solid black;*/ /*NB: cette bordure sert au développement*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin:2px;
+	}
+
+article[class="a propos"]{
+	width:100%;
+	border:1px solid #4d0000;
+	background: #fff;
+	border-radius:5px;
+	max-width: 320px;
+	min-width: 280px;
+	margin-bottom: 2px;
+	overflow: auto;
+}
+
+article[class="a propos"] header{
+	height:50px;
+	width: 100%;
+	background: #4d0000;
+	border-radius: 5px 5px 0 0;
+}
+
+article [class="a propos"] footer{
+	height:50px;
+	width: 100%;
+	background: #4d0000;
+	border-radius: 0 0 5px 5px;
+	margin-top: 20px;
+}
+
+.form{
+	width: 100%;
+	max-width:320px;
+	min-width: 280px;
+	background:#4d0000;
+	border:2px solid #fff;
+	border-radius:5px;
+	margin-bottom:2px;
+
+/*Disposition de la section et des champs de formualires*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;}
+
+/*Design des en-tête de section*/
+.form-header{
+	width: 100%;
+	height:50px;
+	border-radius: 5px 5px 0 0;
+	color:white;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;}
+
+span{
+padding: 3px 15px;
+border-radius: 5px;
+color:white;
+text-align: center;}
+
+/*Effets lors du remplissage des formulaires*/	
+input:focus{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:8px 8px 5px #000 ;
+	border-radius: 10px;}
+
+input:hover{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:4px 4px 5px #000 ;
+	border-radius: 10px;}
+
+/*Personalisationdes champs de formulaire*/
+input{font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background: unset;
+	border:none;
+	border-bottom: 1px solid #4d0000;
+	position:relative; 
+	margin-top:20px;
+	height: 25px;}
+
+/*Personalisation du bouton d'envoi*/
+input[type="submit"]{
+	margin-left: 22%;
+	margin-bottom: 30px;
+	background: orange;
+	opacity: ;
+	border-radius:20px;
+	box-shadow: 4px 4px 30px #000;
+	color:#4d0000;}
+
+.lien{
+	float: right;
+	color:#fff;
+	text-decoration:none;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size:11;}
+
+/*.lien:visited{color:orange;}
+.lien:hover{color:orange;}
+.lien:active{color:orange;}*/
+
+		/*La galerie photos contenant les présentations*/
+
+section[class="samples"]{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background: white;
+	border-radius:5px;
+}
+
+ section[class="samples"] article{
+ 	height:300px;
+ 	width:250px;
+ 	border-radius: 5px;
+ 	border:1.5px solid #4d0000;
+ 	margin-right: 20px;
+ 	margin-left:20px;
+ 	margin-top:30px;
+ 	transition:1s;
+ }
+
+ section[class="samples"] article header{
+ 	height: 100%;
+ 	width:100%;
+ 	border-radius:5px 5px 0 0 ;
+ 	background: black;
+ 	animation:blink 3s 1s infinite linear;
+ }
+
+section[class="samples"] article header img{
+	width: 100%;
+	height:100%;
+}
+
+
+ section[class="samples"] article footer{
+ 	display: none;
+ 	position:relative;
+ 	bottom:100%;
+ 	height: 100%;
+ 	width:100%;
+ 	opacity:0.8;
+ 	border-radius:0 0 5px 5px;
+ 	background: #000;
+
+ }
+
+ section[class="samples"] article:hover footer{
+	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center; 
+ 	transition:0.5s;	
+ }
+
+
+/*Une petite animation en fonction des navigateurs*/
+@keyframes redirect-link{
+	from{
+		-webkit-transform: translateX(-20px);
+		-moz-transform: translateX(-20px);
+		-ms-transform: translateX(-20px);}
+	to{-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);}}
+ 
+ header[class="article-header"]{
+ 	display: flex;
+ 	flex-direction:row;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ section div h2{
+ 	font-weight: bold;
+ 	font-family: lucida sans;
+ 	color:black;
+ }
+
+ div[class="next"]{
+
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ 	height: 50px;
+ 	width:100%;
+ 	border:none;
+ 	margin-top:10px;
+ }
+
+ /*Le bloc contenant la flèche au bas*/
+ div[class="next"] a div[class="next-icon"]{
+ 	height: 35px;
+ 	border:2px solid #4d0000;
+ 	background: #fff;
+ 	border-radius: 10px;
+ 	margin-right: 30px;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ div[class="next"] a div[class="next-icon"] img{
+ 	height: 100%;
+ 	-webkit-animation:redirect-link 0.75s infinite ease;
+ 	-moz-animation:redirect-link 0.75s infinite ease;
+ 	-ms-animation:redirect-link 0.75s infinite ease;
+ }
+ div[class="next"] a div[class="next-icon"] span{
+ 	color: #4d0000;
+ 	font-weight: bold;
+ 	font-size: 15;
+ 	margin-right: 20px;
+ }
+
+ /* La section contenant l'invitation sur les réseaux sociaux*/
+
+/* NB: l'article ci-dessous , le formulaire et la section des réseaux sociaux
+ ont des mise en forme communes*/
+ /*article[class="community"]{ 
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	max-width: 320px;
+	min-width: 280px;
+	border-radius:5px;
+	border:1px solid #4d0000;
+	margin-bottom:2px;
+ }
+
+ article[class="community"] header{
+ 	height: 50px;
+ 	width:100%;
+ 	background: #4d0000;
+ 	border-radius:5px 5px 0px 0px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center
+ 	
+ }
+
+ article[class="community"] footer{
+ 	height: 90px;
+ 	width:100%;
+ 	background: #4d0000;
+ 	border-radius:0px 0px 5px 5px;
+ 	border:2px solid #4d0000;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	 }
+
+ article[class="community"] footer span[class="message"]{
+ 	margin:7px;
+ }
+
+  article[class="community"] footer div[class="social-media"]{
+  	height: 40px;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  	align-items: center;
+  }
+
+  article[class="community"] footer div[class="social-media"] div{
+  	width:100%;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  article[class="community"] footer div[class="social-media"] div span{
+  	font-size:9px;
+  	color:white;
+  }*/
+
+  /*Mise en forme du pied de la page même */
+
+  body footer[class="body-footer"]{
+  	position:relative;
+  	top:90px;
+	width: 100%;
+	background: #4d0000;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"]{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"] > div{
+	margin-top:20px;
+	margin-bottom: 10px;
+	padding:10px;
+	height:120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-right: 1px inset white;
+	margin-right:10px;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"] div span{
+	text-align:center;
+	word-wrap: break-word;
+}
+div[class="copyright"]{
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin-bottom: 20px;
+margin-top:10px;}
+
+div[class="copyright"] span{
+	padding:3px 5px;
+	color:#fff;
+	border-radius:5px;
+	border:2px solid #fff;
+	font-size: 11px;
+}
+
+.newsletter-form > input:focus{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:8px 8px 5px #000 ;
+	border-radius: 10px 0px 0px 10px;}
+
+.newsletter-form > input:hover{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:4px 4px 5px #000 ;
+	border-radius: 10px 0px 0px 10px;}
+
+/*Personalisationdes champs de formulaire*/
+.newsletter-form > input{
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background: unset;
+	border:none;
+	border-bottom: 1px solid #fff;
+	position:relative; 
+	margin-top:20px;
+	height: 25px;}
+
+/*Personalisation du bouton d'envoi*/
+.newsletter-form > input[type="submit"]{
+	margin-left:;
+	background: orange;
+	border-radius:5px;
+	box-shadow: 8px 8px 5px #000;
+	margin-left: 0px;
+	color:#4d0000;}
+
+
+body footer[class="body-footer"] ul{list-style: none;}
+body footer[class="body-footer"] li{
+	color:black;
+	font-weight: bold;
+	font-size:12px;
+}
+body footer[class="body-footer"] a{text-decoration:none;color:orange;}
+body footer[class="body-footer"] p{
+	color:#fff;
+	font-size: 10px;}
+
+/*----------------------------------------------------------------------
+MISE EN FORME DE LA ZONE D'INVITATION AUX RESEAUX SOCIAUX
+------------------------------------------------------------------------*/
+
+div[class="reseaux-sociaux"] > span[class="message"]{
+ 	margin-bottom:7px;
+ }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"]{
+  	height: 40px;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  	align-items: center;
+  }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"] >div{
+  	width:100%;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"] div > span{
+  	font-size:9px;
+  	color:white;
+  }
+}
+
+  /*---------------------------------------------------------------------
+  					 HERE IS THE MOBILE VERSION CODE
+  -----------------------------------------------------------------------*/
+
+  @media only screen and (max-width: 600px)
+  {
+
+  	/*--------------------------------------------------------------------
+  								FOR ALL
+  	----------------------------------------------------------------------*/
+*{
+	font-family: sans-serif;
+}
+
+body{
+	margin:0;
+	background: #fff;}
+
+  	/*-------------------------------------------------------------------
+  							HERE IS THE HEADER
+  	---------------------------------------------------------------------*/
+body .body-header{
+	background:#4d0000;
+	position:fixed;
+	width:100%;
+	height: 75px;
+	opacity:0.9;
+	margin-bottom: 20px;
+	z-index: 5;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 8px;}
+
+.logo{margin-left:30px;}
+
+.nav-list{display: none;}
+
+
+.log{
+	font-family: lucida handwriting;
+	font-size:40px;
+	color:orange;
+	text-shadow: 3px 3px 4px orange, 4px 4px 3px #fff, 5px 5px 2px #000;
+}
+
+.log sub,.log sup{
+	font-size:11px;
+}
+
+.button-container{margin-right:50px;}
+
+.button{
+	height:50px;
+	width:50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	background: unset;
+	border:1px solid #fff;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.button div{
+	width:100%;
+	height:4px;
+	border-radius:3px;
+	background: #fff;
+}
+
+.menu-header-deroulant{
+	list-style:none;
+	display: all;
+  	position: absolute;
+  	margin-top: 0px;
+ 	width: 200px;
+  	background-color: #ffff;#f9f9f9;
+  	z-index: 1;
+  	border-radius:3px;
+  	border:1px solid #4d0000;
+  	margin-left: 100px;
+	}
+
+.menu-header-deroulant li
+{
+	width:100%;
+	height:50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:3px;
+}
+.menu-header-deroulant li a
+{
+	width:100%;
+	text-decoration:none;
+  	color:#4d0000;
+  	font-size: 11px;
+}
+.menu-header-deroulant li:hover
+{
+	background: #4d0000;border:1px solid #fff;
+}
+.menu-header-deroulant li:hover a
+{
+	color:#fff;
+}
+/*.button-container:hover .menu-header-deroulant
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}*/
+
+
+/*------------------------------------------------------------------
+						HERE IS THE BODY
+---------------------------------------------------------------------*/
+
+section div h2{
+ 	font-weight: bold;
+ 	font-family: lucida sans;
+ 	color:black;
+ 	text-align: center;
+ 	}
+
+.fashion-description-section{
+	height:400px;
+	top:75px;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border:2px solid #000;
+}
+
+header[class="image"]{
+	height: 100%;
+}
+
+.description-text-block{
+	color:white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	position:relative;
+	bottom:100%;
+	background:#000;
+	height:100%;
+	opacity: 0.6;
+}
+
+.description-text-block span 
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.description-text-block button
+{
+	margin-top:20px;
+	background:#4d0000;
+	color:#fff;
+	padding:6px 5px;
+	border:1px solid #fff;
+	border-radius:3px;
+	cursor:pointer;
+	box-shadow: 2px 2px 2px #000;
+}
+
+header[class="image"] img{
+	border-radius:5px;
+	width:100%;
+}
+
+
+section[class="samples"]{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background: white;
+	border-radius:5px;
+}
+
+ section[class="samples"] article{
+ 	height:320px;
+ 	width:60%;
+ 	border-radius: 5px;
+ 	border:1.5px solid #4d0000;
+ 	margin-right: 10px;
+ 	margin-left:10px;
+ 	margin-top:20px;
+ 	transition:1s;
+ }
+
+ section[class="samples"] article header{
+ 	height: 100%;
+ 	width:100%;
+ 	border-radius:5px 5px 0 0 ;
+ 	background: black;
+ }
+
+section[class="samples"] article header img{
+	width: 100%;
+	height:100%;
+}
+
+
+ /*section[class="samples"] article footer{
+ 	display: none;
+ 	position:relative;
+ 	bottom:100%;
+ 	height: 100%;
+ 	width:100%;
+ 	opacity:0.8;
+ 	border-radius:0 0 5px 5px;
+ 	background: #000;
+
+ }*/
+
+ section[class="samples"] article footer span{text-align:center;}
+
+ section[class="samples"] article footer{
+	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center; 
+ 	transition:0.5s;
+ 	color:#fff;
+ 	opacity:0.8;
+ 	position:relative;
+ 	bottom:30%;
+ 	height:30%;
+ 	background: #4d0000;
+ 	border-radius:0px 0px 5px 5px;	
+ }
+
+ div[class="next"]{
+
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ 	height: 50px;
+ 	width:100%;
+ 	border:none;
+ 	margin-top:10px;
+ }
+
+ /*Le bloc contenant la flèche au bas*/
+ div[class="next"] a div[class="next-icon"]{
+ 	height: 35px;
+ 	border:2px solid #4d0000;
+ 	background: #fff;
+ 	border-radius: 10px;
+ 	margin-right: 30px;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ div[class="next"] a div[class="next-icon"] img{
+ 	height: 100%;
+ 	-webkit-animation:redirect-link 0.75s infinite ease;
+ 	-moz-animation:redirect-link 0.75s infinite ease;
+ 	-ms-animation:redirect-link 0.75s infinite ease;
+ }
+ div[class="next"] a div[class="next-icon"] span{
+ 	color: #4d0000;
+ 	font-weight: bold;
+ 	font-size: 15;
+ 	margin-right: 20px;
+ }
+ @keyframes redirect-link{
+	from{
+		-webkit-transform: translateX(-20px);
+		-moz-transform: translateX(-20px);
+		-ms-transform: translateX(-20px);}
+	to{-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);}}
+/*-----------------------------------------------------------------
+							HERE IS THE FOOTER
+-------------------------------------------------------------------*/
+
+body footer[class="body-footer"]{
+  	position:relative;
+  	top:90px;
+	width: 100%;
+	background: #4d0000;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"]{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"] > div{
+	margin-top:20px;
+	margin-bottom: 10px;
+	padding:10px;
+	height:120px;
+	width:70%;
+	border-bottom: 1px inset #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right:10px;
+}
+
+body footer[class="body-footer"] section[class="a propos-section"] div span{
+	color:#fff;
+	text-align:center;
+	word-wrap: break-word;
+}
+div[class="copyright"]{
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin-bottom: 20px;
+margin-top:10px;}
+
+div[class="copyright"] span{
+	padding:3px 5px;
+	color:#fff;
+	border-radius:5px;
+	border:2px solid #fff;
+	font-size: 11px;
+}
+
+.newsletter-form > input:focus{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:8px 8px 5px #000 ;
+	border-radius: 10px 0px 0px 10px;}
+
+.newsletter-form > input:hover{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:4px 4px 5px #000 ;
+	border-radius: 10px 0px 0px 10px;}
+
+/*Personalisationdes champs de formulaire*/
+.newsletter-form > input{
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background: unset;
+	border:none;
+	border-bottom: 1px solid #fff;
+	position:relative; 
+	margin-top:20px;
+	height: 25px;}
+
+/*Personalisation du bouton d'envoi*/
+.newsletter-form > input[type="submit"]{
+	margin-left:;
+	background: orange;
+	border-radius:5px;
+	box-shadow: 8px 8px 5px #000;
+	margin-left: 0px;
+	color:#4d0000;}
+
+
+body footer[class="body-footer"] ul{list-style: none;}
+body footer[class="body-footer"] li{
+	color:black;
+	font-weight: bold;
+	font-size:12px;
+}
+body footer[class="body-footer"] a{text-decoration:none;color:orange;}
+body footer[class="body-footer"] p{
+	color:#fff;
+	font-size: 10px;}
+/*----------------------------------------------------------------------
+MISE EN FORME DE LA ZONE D'INVITATION AUX RESEAUX SOCIAUX
+------------------------------------------------------------------------*/
+
+div[class="reseaux-sociaux"] > span[class="message"]{
+ 	margin-bottom:7px;
+ }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"]{
+  	height: 40px;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  	align-items: center;
+  }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"] >div{
+  	width:100%;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  div[class="reseaux-sociaux"] > div[class="social-media"] div > span{
+  	font-size:9px;
+  	color:white;
+  }
+
+
+}
+
+  @media only screen and (min-width: 600px;){}
+
+  @media only screen and (min-width: 768px;){}
+
+  @media only screen and (min-width: 992px;){}

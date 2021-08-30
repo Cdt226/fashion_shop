@@ -1,0 +1,82 @@
+/*L'image d'arrière plan elle est fixe, et couvre toute la page*/
+body{background: url(hilla_images/mannequin_shopping.jpg) no-repeat fixed ; 
+	background-size: cover;}
+/*Le cadre section contenant les champs de formulaire est bien centré ses éléments aussi*/
+.body-header{height: 150px;}
+.body-footer{height: 250px;}
+section{
+	width: 400px;
+	height: 350px;
+	box-shadow: 6px 6px 50px  #111;
+	border:none;
+	border-radius:5px;
+	background: #000;
+	opacity: 0.5;
+/*Disposition de section et des champs de formualires*/
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+position:fixed;
+left:36%;}
+
+/*Design des en-tête de section*/
+.header{
+	width: 100%;
+	height:50px;
+	opacity:0.6;
+	background: #ffebcd	;
+	border-radius: 5px 5px 0 0;
+	color:#4d0000;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+span{opacity: 1;}
+/*Effets lors du remplissage*/	
+input:focus{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:4px 4px 5px orange ;
+	border-radius: 10px;}
+input:hover{
+	transition: all 0.5s ease;
+	outline: none;
+	border-bottom: 2px solid orange;
+	box-shadow:4px 4px 5px orange ;
+	border-radius: 10px;}
+/*Personalisationdes champs de formulaire*/
+input{font-family: sans-serif;
+	font-weight: bold;
+	color: #ccc;
+	background: unset;
+	border:none;
+	border-bottom: 1px solid #4d0000;
+	position:relative; 
+	margin-top:20px;
+	height: 25px;}
+/*Personalisation du bouton d'envoi*/
+input[type="submit"]{
+	margin-left: 20%;
+	background:#ffebcd;
+	border:2px solid #ffebcd;
+	border-radius:20px;
+	box-shadow: 4px 4px 4px #000;
+	color:#4d0000;}
+a:link{
+	float: right;
+	color:orange;
+	text-decoration:none;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size:12;}
+a:visited{color:orange;}
+a:hover{color:orange;}
+a:active{color:orange;}
+	/*les couleurs: #ffebcd = blond;
+					#4d0000 = rouge bordeaux;*/}
+
